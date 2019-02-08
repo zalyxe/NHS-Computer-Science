@@ -57,16 +57,23 @@ function clicked_multi(){
   document.getElementById('mytextbox').value+='*';
 }
 
-
-
 function clicked_zero(){
   document.getElementById('mytextbox').value+='0';
 }
 function clicked_eq(){
-  document.getElementById('mytextbox').value+='=';
+  //document.getElementById('mytextbox').value+='=';
+  var result = eval(document.getElementById('mytextbox').value);  
+  document.getElementById('mytextbox').value=result; 
 }
 function clicked_divi(){
   document.getElementById('mytextbox').value+='/';
+}
+
+function clicked_c(){
+	document.getElementById('mytextbox').value=' ';
+}
+function clicked_deci(){
+	document.getElementById('mytextbox').value+='.';
 }
 </script>
 </head>
@@ -76,7 +83,7 @@ function clicked_divi(){
 
 <table>
 		<tr>
-        	<td colspan="4" style="background-color:white;width:125px;height:125px;"><input type="text" style="width:332px;height:125px;" id="mytextbox"></input></td>
+        	<td colspan="4" style="background-color:white;width:125px;height:75px;"><input type="text" style="width:332px;height:125px;font-size:32px;" id="mytextbox"></input></td>
             </tr>
         <tr>
                 <td rowspan="1" style="background-color:white;width:75px;height:75px;"> <input type="button" style="width:80px;height:75px;"value="       1        " onclick="clicked_one()"></td>
@@ -100,12 +107,16 @@ function clicked_divi(){
                 <td rowspan="1" style="background-color:white;width:75px;height:75px;"><input type="button" style="width:80px;height:75px;" value="        *        " onclick="clicked_multi()"></td>
 		</tr>
         
-        <tr>
-                <td rowspan="1" style="background-color:white;width:75px;height:75px;"><input type="button" style="width:80px;height:75px;" value="       0        " onclick="clicked_zero()"> </td>
+       <tr>
+               
                 <td colspan="2" style="background-color:white;width:75px;height:75px;"><input type="button" style="width:165px;height:75px;" value="                   =                  " onclick="clicked_eq()"></td>
+                <td rowspan="1" style="background-color:white;width:75px;height:75px;"><input type="button" style="width:80px;height:75px;" value="       0        " onclick="clicked_zero()"> </td>
                 <td rowspan="1" style="background-color:white;width:75px;height:75px;"> <input type="button" style="width:80px;height:75px;" value="        /        " onclick="clicked_divi()"></td>
 		</tr>
+        <tr>
+        <td colspan="2" style="background-color:white;width:125px;height:35px"> <input type="button" style="width:165px;height:35px;" value="     C     " onclick="clicked_c()"></td>
+        <td rowspan="1" style="background-color:white;width:80px;height:35px;"> <input type="button" style="width:80px;height:35px;" value="       .      " onclick="clicked_deci()"></td>
+        </tr>
 </table>
-</p>
 </body>
 </html>

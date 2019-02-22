@@ -5,122 +5,129 @@ div {	border-style: dotted;
 		border-color:white;
         border-width:1px;
 }
+
 </style>
 <script>
-//row one
 
+var colorON = '#00f2ff';
+colorON = '#FF0000'; 
+var colorOFF = 'black';
+
+
+//row one
 function click_oneA(){
   var button = document.getElementById('oneA');
-  if (button.style.backgroundColor == 'black') {
-    button.style.backgroundColor = '#00f2ff';
+  if (button.style.backgroundColor == colorOFF) {
+    button.style.backgroundColor = colorON;
    }
+    else {
+    button.style.backgroundColor = colorOFF;
+    }
+}
+  function click_oneA(){
+      var button = document.getElementById('oneA');
+      if (button.style.backgroundColor == colorOFF) {
+      button.style.backgroundColor = colorON;
+      }
+      else {
+          button.style.backgroundColor = colorOFF;
+          }
+          var button = document.getElementById('oneB');
+          if (button.style.backgroundColor == colorOFF) {
+          button.style.backgroundColor = colorON;
+              }
+              else {
+          button.style.backgroundColor = colorOFF;
+          }
+              var button = document.getElementById('twoA');
+                  if (button.style.backgroundColor == colorOFF) {
+                  button.style.backgroundColor = colorON;
+      }
+          else {
+          button.style.backgroundColor = colorOFF;
+          }
+      }
+
+function click_oneB(){
+  var button = document.getElementById('oneB');
+  if (button.style.backgroundColor == colorOFF) {
+    button.style.backgroundColor = '#00f2ff'; 
+  } 
+  	else {
+    button.style.backgroundColor = colorOFF; 
+  }
+}
+      function click_oneB(){
+        var button = document.getElementById('oneB');
+        if (button.style.backgroundColor == colorOFF) {
+        button.style.backgroundColor = '#00f2ff';
+        }
+        else {
+            button.style.backgroundColor = colorOFF;
+            }
+            var button = document.getElementById('oneA');
+            if (button.style.backgroundColor == colorOFF) {
+            button.style.backgroundColor = '#00f2ff';
+                }
+                else {
+            button.style.backgroundColor = colorOFF;
+            }
+            var button = document.getElementById('oneC');
+            if (button.style.backgroundColor == colorOFF) {
+            button.style.backgroundColor = '#00f2ff';
+                }
+                else {
+            button.style.backgroundColor = 'black';
+            }
+                var button = document.getElementById('twoB');
+                    if (button.style.backgroundColor == 'black') {
+                    button.style.backgroundColor = '#00f2ff';
+        }
+            else {
+            button.style.backgroundColor = 'black';
+            }
+        }
+      
+function click_oneC(){
+   var button = document.getElementById('oneC');
+   if (button.style.backgroundColor == 'black') {
+    button.style.backgroundColor = '#00f2ff';
+	}
     else {
     button.style.backgroundColor = 'black';
     }
 }
-	  function click_oneA(){
-	      var button = document.getElementById('oneA');
-	      if (button.style.backgroundColor == 'black') {
-	      button.style.backgroundColor = '#00f2ff';
-	      }
-	      else {
-		  button.style.backgroundColor = 'black';
-		  }
-		  var button = document.getElementById('oneB');
-		  if (button.style.backgroundColor == 'black') {
-		  button.style.backgroundColor = '#00f2ff';
-		      }
-		      else {
-		  button.style.backgroundColor = 'black';
-		  }
-		      var button = document.getElementById('twoA');
-			  if (button.style.backgroundColor == 'black') {
-			  button.style.backgroundColor = '#00f2ff';
-	      }
-		  else {
-		  button.style.backgroundColor = 'black';
-		  }
-	      }
 
-function click_oneB(){
-  var button = document.getElementById('oneB');
-  if (button.style.backgroundColor == 'black') {
-    button.style.backgroundColor = '#00f2ff'; 
-  } 
-  	else {
-    button.style.backgroundColor = 'black'; 
-  }
-}
-	      function click_oneB(){
-		var button = document.getElementById('oneB');
-		if (button.style.backgroundColor == 'black') {
-		button.style.backgroundColor = '#00f2ff';
-		}
-		else {
-		    button.style.backgroundColor = 'black';
-		    }
-		    var button = document.getElementById('oneA');
-		    if (button.style.backgroundColor == 'black') {
-		    button.style.backgroundColor = '#00f2ff';
-			}
-			else {
-		    button.style.backgroundColor = 'black';
-		    }
-		    var button = document.getElementById('oneC');
-		    if (button.style.backgroundColor == 'black') {
-		    button.style.backgroundColor = '#00f2ff';
-			}
-			else {
-		    button.style.backgroundColor = 'black';
-		    }
-			var button = document.getElementById('twoB');
-			    if (button.style.backgroundColor == 'black') {
-			    button.style.backgroundColor = '#00f2ff';
-		}
-		    else {
-		    button.style.backgroundColor = 'black';
-		    }
-		}
-
-function click_oneC(){
-	var button = document.getElementById('oneC');
-	if (button.style.backgroundColor == 'black') {
-	 button.style.backgroundColor = '#00f2ff';
-		}
-	    else {
-	    button.style.backgroundColor = 'black';
-	    }
-	}
-	    function click_oneC(){
-		    var button = document.getElementById('oneC');
-		    if (button.style.backgroundColor == 'black') {
-		    button.style.backgroundColor = '#00f2ff';
-		    }
-		    else {
-			button.style.backgroundColor = 'black';
-			}
-			var button = document.getElementById('oneB');
-			if (button.style.backgroundColor == 'black') {
-			button.style.backgroundColor = '#00f2ff';
-			    }
-			    else {
-			button.style.backgroundColor = 'black';
-			}
-			var button = document.getElementById('oneD');
-			if (button.style.backgroundColor == 'black') {
-			button.style.backgroundColor = '#00f2ff';
-			    }
-			    else {
-			button.style.backgroundColor = 'black';
-			}
-			    var button = document.getElementById('twoC');
-				if (button.style.backgroundColor == 'black') {
-				button.style.backgroundColor = '#00f2ff';
-		    }
-			else {
-			button.style.backgroundColor = 'black';
-			}
-		    }
+    function click_oneC(){
+            var button = document.getElementById('oneC');
+            if (button.style.backgroundColor == 'black') {
+            button.style.backgroundColor = '#00f2ff';
+            }
+            else {
+                button.style.backgroundColor = 'black';
+                }
+                var button = document.getElementById('oneB');
+                if (button.style.backgroundColor == 'black') {
+                button.style.backgroundColor = '#00f2ff';
+                    }
+                    else {
+                button.style.backgroundColor = 'black';
+                }
+                var button = document.getElementById('oneD');
+                if (button.style.backgroundColor == 'black') {
+                button.style.backgroundColor = '#00f2ff';
+                    }
+                    else {
+                button.style.backgroundColor = 'black';
+                }
+                    var button = document.getElementById('twoC');
+                        if (button.style.backgroundColor == 'black') {
+                        button.style.backgroundColor = '#00f2ff';
+            }
+                else {
+                button.style.backgroundColor = 'black';
+                }
+            }
 
 
 function click_oneD(){
@@ -239,9 +246,6 @@ function click_twoA(){
                             button.style.backgroundColor = 'black';
                             }
                         }
-         
-
-
 function click_twoB(){
   var button = document.getElementById('twoB');
   if (button.style.backgroundColor == 'black') {
@@ -288,8 +292,6 @@ function click_twoB(){
                       button.style.backgroundColor = 'black';
                       }
                   }
-
-
 function click_twoC(){
 	var button = document.getElementById('twoC');
     if (button.style.backgroundColor == 'black') {
@@ -336,8 +338,6 @@ function click_twoC(){
                       button.style.backgroundColor = 'black';
                       }
                   }
-
-
 function click_twoD(){
   var button = document.getElementById('twoD');
   if (button.style.backgroundColor == 'black') {
@@ -384,8 +384,6 @@ function click_twoD(){
                       button.style.backgroundColor = 'black';
                       }
                   }
-
-
 function click_twoE(){
   var button = document.getElementById('twoE');
   if (button.style.backgroundColor == 'black') {
@@ -425,6 +423,7 @@ function click_twoE(){
                             button.style.backgroundColor = 'black';
                             }
                         }
+                        
 //row three
 function click_threeA(){
 	var button = document.getElementById('threeA');
@@ -464,9 +463,7 @@ function click_threeA(){
                             else {
                             button.style.backgroundColor = 'black';
                             }
-                        }
-                        
-                        
+                        }                       
 function click_threeB(){
   var button = document.getElementById('threeB');
   if (button.style.backgroundColor == 'black') {
@@ -513,9 +510,6 @@ function click_threeB(){
                       button.style.backgroundColor = 'black';
                       }
                   }
-                  
-                  
-
 function click_threeC(){
 	var button = document.getElementById('threeC');
     if (button.style.backgroundColor == 'black') {
@@ -596,147 +590,147 @@ function click_threeD(){
                       button.style.backgroundColor = 'black';
                       }
                           var button = document.getElementById('threeE');
-                              if (button.style.backgroundColor == 'black') {
+                              if (button.style.backgroundColor == colorOFF) {
                               button.style.backgroundColor = '#00f2ff';
                   }
                       else {
-                      button.style.backgroundColor = 'black';
+                      button.style.backgroundColor = colorOFF;
                       }
                       var button = document.getElementById('threeC');
-                      if (button.style.backgroundColor == 'black') {
+                      if (button.style.backgroundColor == colorOFF) {
                       button.style.backgroundColor = '#00f2ff';
                           }
                           else {
-                      button.style.backgroundColor = 'black';
+                      button.style.backgroundColor = colorOFF;
                       }
                   }
                   
 function click_threeE(){
   var button = document.getElementById('threeE');
-  if (button.style.backgroundColor == 'black') {
+  if (button.style.backgroundColor == colorOFF) {
     button.style.backgroundColor = '#00f2ff'; 
   } 
   	else {
-    button.style.backgroundColor = 'black'; 
+    button.style.backgroundColor = colorOFF; 
   }
 }
 			function click_threeE(){
                         var button = document.getElementById('threeE');
-                        if (button.style.backgroundColor == 'black') {
+                        if (button.style.backgroundColor == colorOFF) {
                         button.style.backgroundColor = '#00f2ff';
                         }
                         else {
-                            button.style.backgroundColor = 'black';
+                            button.style.backgroundColor = colorOFF;
                             }
                             var button = document.getElementById('twoE');
-                            if (button.style.backgroundColor == 'black') {
+                            if (button.style.backgroundColor == colorOFF) {
                             button.style.backgroundColor = '#00f2ff';
                                 }
                                 else {
-                            button.style.backgroundColor = 'black';
+                            button.style.backgroundColor = colorOFF;
                             }
                             var button = document.getElementById('fourE');
-                            if (button.style.backgroundColor == 'black') {
+                            if (button.style.backgroundColor == colorOFF) {
                             button.style.backgroundColor = '#00f2ff';
                                 }
                                 else {
-                            button.style.backgroundColor = 'black';
+                            button.style.backgroundColor = colorOFF;
                             }
 							var button = document.getElementById('threeD');
-   							if (button.style.backgroundColor == 'black') {
+   							if (button.style.backgroundColor == colorOFF) {
           					button.style.backgroundColor ='#00f2ff';
                         }
                             else {
-                            button.style.backgroundColor = 'black';
+                            button.style.backgroundColor = colorOFF;
                             }
                         }
 //row four
 
 function click_fourA(){
 	var button = document.getElementById('fourA');
-    if (button.style.backgroundColor == 'black') {
+    if (button.style.backgroundColor == colorOFF) {
     button.style.backgroundColor = '#00f2ff';
 	}
     else {
-    button.style.backgroundColor = 'black';
+    button.style.backgroundColor = colorOFF;
     }
 }
  			function click_fourA(){
                         var button = document.getElementById('fourA');
-                        if (button.style.backgroundColor == 'black') {
+                        if (button.style.backgroundColor == colorOFF) {
                         button.style.backgroundColor = '#00f2ff';
                         }
                         else {
-                            button.style.backgroundColor = 'black';
+                            button.style.backgroundColor = colorOFF;
                             }
                             var button = document.getElementById('threeA');
-                            if (button.style.backgroundColor == 'black') {
+                            if (button.style.backgroundColor == colorOFF) {
                             button.style.backgroundColor = '#00f2ff';
                                 }
                                 else {
-                            button.style.backgroundColor = 'black';
+                            button.style.backgroundColor = colorOFF;
                             }
                             var button = document.getElementById('fiveA');
-                            if (button.style.backgroundColor == 'black') {
+                            if (button.style.backgroundColor == colorOFF) {
                             button.style.backgroundColor = '#00f2ff';
                                 }
                                 else {
-                            button.style.backgroundColor = 'black';
+                            button.style.backgroundColor = colorOFF;
                             }
 							var button = document.getElementById('fourB');
-   							if (button.style.backgroundColor == 'black') {
+   							if (button.style.backgroundColor == colorOFF) {
           					button.style.backgroundColor ='#00f2ff';
                         }
                             else {
-                            button.style.backgroundColor = 'black';
+                            button.style.backgroundColor = colorOFF;
                             }
                         }
                         
                         
 function click_fourB(){
   var button = document.getElementById('fourB');
-  if (button.style.backgroundColor == 'black') {
+  if (button.style.backgroundColor == colorOFF) {
     button.style.backgroundColor = '#00f2ff'; 
   } 
   	else {
-    button.style.backgroundColor = 'black'; 
+    button.style.backgroundColor = colorOFF; 
   }
 }
 		function click_fourB(){
                   var button = document.getElementById('fourB');
-                  if (button.style.backgroundColor == 'black') {
+                  if (button.style.backgroundColor == colorOFF) {
                   button.style.backgroundColor = '#00f2ff';
                   }
                   else {
-                      button.style.backgroundColor = 'black';
+                      button.style.backgroundColor = colorOFF;
                       }
                       var button = document.getElementById('threeB');
-                      if (button.style.backgroundColor == 'black') {
+                      if (button.style.backgroundColor == colorOFF) {
                       button.style.backgroundColor = '#00f2ff';
                           }
                           else {
-                      button.style.backgroundColor = 'black';
+                      button.style.backgroundColor = colorOFF;
                       }
                       var button = document.getElementById('fiveB');
-                      if (button.style.backgroundColor == 'black') {
+                      if (button.style.backgroundColor == colorOFF) {
                       button.style.backgroundColor = '#00f2ff';
                           }
                           else {
-                      button.style.backgroundColor = 'black';
+                      button.style.backgroundColor = colorOFF;
                       }
                           var button = document.getElementById('fourC');
-                              if (button.style.backgroundColor == 'black') {
+                              if (button.style.backgroundColor == colorOFF) {
                               button.style.backgroundColor = '#00f2ff';
                   }
                       else {
-                      button.style.backgroundColor = 'black';
+                      button.style.backgroundColor = colorOFF;
                       }
                       var button = document.getElementById('fourA');
-                      if (button.style.backgroundColor == 'black') {
+                      if (button.style.backgroundColor == colorOFF) {
                       button.style.backgroundColor = '#00f2ff';
                           }
                           else {
-                      button.style.backgroundColor = 'black';
+                      button.style.backgroundColor = colorOFF;
                       }
                   }
                   
@@ -744,11 +738,11 @@ function click_fourB(){
 
 function click_fourC(){
 	var button = document.getElementById('threeC');
-    if (button.style.backgroundColor == 'black') {
+    if (button.style.backgroundColor == colorOFF) {
     button.style.backgroundColor = '#00f2ff';
 	}
     else {
-    button.style.backgroundColor = 'black';
+    button.style.backgroundColor = colorOFF;
     }
 }
 			function click_fourC(){
@@ -757,328 +751,334 @@ function click_fourC(){
                   button.style.backgroundColor = '#00f2ff';
                   }
                   else {
-                      button.style.backgroundColor = 'black';
+                      button.style.backgroundColor = colorOFF;
                       }
                       var button = document.getElementById('threeC');
-                      if (button.style.backgroundColor == 'black') {
+                      if (button.style.backgroundColor == colorOFF) {
                       button.style.backgroundColor = '#00f2ff';
                           }
                           else {
-                      button.style.backgroundColor = 'black';
+                      button.style.backgroundColor = colorOFF;
                       }
                       var button = document.getElementById('fiveC');
-                      if (button.style.backgroundColor == 'black') {
+                      if (button.style.backgroundColor == colorOFF) {
                       button.style.backgroundColor = '#00f2ff';
                           }
                           else {
-                      button.style.backgroundColor = 'black';
+                      button.style.backgroundColor = colorOFF;
                       }
                           var button = document.getElementById('fourD');
-                              if (button.style.backgroundColor == 'black') {
+                              if (button.style.backgroundColor == colorOFF) {
                               button.style.backgroundColor = '#00f2ff';
                   }
                       else {
-                      button.style.backgroundColor = 'black';
+                      button.style.backgroundColor = colorOFF;
                       }
                       var button = document.getElementById('fourB');
-                      if (button.style.backgroundColor == 'black') {
+                      if (button.style.backgroundColor == colorOFF) {
                       button.style.backgroundColor = '#00f2ff';
                           }
                           else {
-                      button.style.backgroundColor = 'black';
+                      button.style.backgroundColor = colorOFF;
                       }
                   }
                   
                   
 function click_fourD(){
   var button = document.getElementById('fourD');
-  if (button.style.backgroundColor == 'black') {
+  if (button.style.backgroundColor == colorOFF) {
     button.style.backgroundColor = '#00f2ff'; 
   } 
   	else {
-    button.style.backgroundColor = 'black'; 
+    button.style.backgroundColor = colorOFF; 
   }
 }
 			function click_fourD(){
                   var button = document.getElementById('fourD');
-                  if (button.style.backgroundColor == 'black') {
+                  if (button.style.backgroundColor == colorOFF) {
                   button.style.backgroundColor = '#00f2ff';
                   }
                   else {
-                      button.style.backgroundColor = 'black';
+                      button.style.backgroundColor = colorOFF;
                       }
                       var button = document.getElementById('threeD');
-                      if (button.style.backgroundColor == 'black') {
+                      if (button.style.backgroundColor == colorOFF) {
                       button.style.backgroundColor = '#00f2ff';
                           }
                           else {
-                      button.style.backgroundColor = 'black';
+                      button.style.backgroundColor = colorOFF;
                       }
                       var button = document.getElementById('fiveD');
-                      if (button.style.backgroundColor == 'black') {
+                      if (button.style.backgroundColor == colorOFF) {
                       button.style.backgroundColor = '#00f2ff';
                           }
                           else {
-                      button.style.backgroundColor = 'black';
+                      button.style.backgroundColor = colorOFF;
                       }
                           var button = document.getElementById('fourE');
-                              if (button.style.backgroundColor == 'black') {
+                              if (button.style.backgroundColor == colorOFF) {
                               button.style.backgroundColor = '#00f2ff';
                   }
                       else {
-                      button.style.backgroundColor = 'black';
+                      button.style.backgroundColor = colorOFF;
                       }
                       var button = document.getElementById('fourC');
-                      if (button.style.backgroundColor == 'black') {
+                      if (button.style.backgroundColor == colorOFF) {
                       button.style.backgroundColor = '#00f2ff';
                           }
                           else {
-                      button.style.backgroundColor = 'black';
+                      button.style.backgroundColor = colorOFF;
                       }
                   }
                   
 function click_fourE(){
   var button = document.getElementById('fourE');
-  if (button.style.backgroundColor == 'black') {
+  if (button.style.backgroundColor == colorOFF) {
     button.style.backgroundColor = '#00f2ff'; 
   } 
   	else {
-    button.style.backgroundColor = 'black'; 
+    button.style.backgroundColor = colorOFF; 
   }
 }
 			function click_fourE(){
                         var button = document.getElementById('fourE');
-                        if (button.style.backgroundColor == 'black') {
+                        if (button.style.backgroundColor == colorOFF) {
                         button.style.backgroundColor = '#00f2ff';
                         }
                         else {
-                            button.style.backgroundColor = 'black';
+                            button.style.backgroundColor = colorOFF;
                             }
                             var button = document.getElementById('threeE');
-                            if (button.style.backgroundColor == 'black') {
+                            if (button.style.backgroundColor == colorOFF) {
                             button.style.backgroundColor = '#00f2ff';
                                 }
                                 else {
-                            button.style.backgroundColor = 'black';
+                            button.style.backgroundColor = colorOFF;
                             }
                             var button = document.getElementById('fiveE');
-                            if (button.style.backgroundColor == 'black') {
+                            if (button.style.backgroundColor == colorOFF) {
                             button.style.backgroundColor = '#00f2ff';
                                 }
                                 else {
-                            button.style.backgroundColor = 'black';
+                            button.style.backgroundColor = colorOFF;
                             }
 							var button = document.getElementById('fourD');
-   							if (button.style.backgroundColor == 'black') {
+   							if (button.style.backgroundColor == colorOFF) {
           					button.style.backgroundColor ='#00f2ff';
                         }
                             else {
-                            button.style.backgroundColor = 'black';
+                            button.style.backgroundColor = colorOFF;
                             }
                         }
 //row 5
 function click_fiveA(){
   var button = document.getElementById('fiveA');
-  if (button.style.backgroundColor == 'black') {
+  if (button.style.backgroundColor == colorOFF) {
     button.style.backgroundColor = '#00f2ff';
    }
     else {
-    button.style.backgroundColor = 'black';
+    button.style.backgroundColor = colorOFF;
     }
 }
-//BUTTON TOP LEFT
   function click_fiveA(){
       var button = document.getElementById('fiveA');
-      if (button.style.backgroundColor == 'black') {
+      if (button.style.backgroundColor == colorOFF) {
       button.style.backgroundColor = '#00f2ff';
       }
       else {
-          button.style.backgroundColor = 'black';
+          button.style.backgroundColor = colorOFF;
           }
           var button = document.getElementById('fiveB');
-          if (button.style.backgroundColor == 'black') {
+          if (button.style.backgroundColor == colorOFF) {
           button.style.backgroundColor = '#00f2ff';
               }
               else {
-          button.style.backgroundColor = 'black';
+          button.style.backgroundColor = colorOFF;
           }
               var button = document.getElementById('fourA');
-                  if (button.style.backgroundColor == 'black') {
+                  if (button.style.backgroundColor == colorOFF) {
                   button.style.backgroundColor = '#00f2ff';
       }
           else {
-          button.style.backgroundColor = 'black';
+          button.style.backgroundColor = colorOFF;
           }
       }
 
 function click_fiveB(){
   var button = document.getElementById('fiveB');
-  if (button.style.backgroundColor == 'black') {
+  if (button.style.backgroundColor == colorOFF) {
     button.style.backgroundColor = '#00f2ff'; 
   } 
   	else {
-    button.style.backgroundColor = 'black'; 
+    button.style.backgroundColor = colorOFF; 
   }
 }
       function click_fiveB(){
         var button = document.getElementById('fiveB');
-        if (button.style.backgroundColor == 'black') {
+        if (button.style.backgroundColor == colorOFF) {
         button.style.backgroundColor = '#00f2ff';
         }
         else {
-            button.style.backgroundColor = 'black';
+            button.style.backgroundColor = colorOFF;
             }
             var button = document.getElementById('fiveA');
-            if (button.style.backgroundColor == 'black') {
+            if (button.style.backgroundColor == colorOFF) {
             button.style.backgroundColor = '#00f2ff';
                 }
                 else {
-            button.style.backgroundColor = 'black';
+            button.style.backgroundColor = colorOFF;
             }
             var button = document.getElementById('fiveC');
-            if (button.style.backgroundColor == 'black') {
+            if (button.style.backgroundColor == colorOFF) {
             button.style.backgroundColor = '#00f2ff';
                 }
                 else {
-            button.style.backgroundColor = 'black';
+            button.style.backgroundColor = colorOFF;
             }
                 var button = document.getElementById('fourB');
-                    if (button.style.backgroundColor == 'black') {
+                    if (button.style.backgroundColor == colorOFF) {
                     button.style.backgroundColor = '#00f2ff';
         }
             else {
-            button.style.backgroundColor = 'black';
+            button.style.backgroundColor = colorOFF;
             }
         }
       
 function click_fiveC(){
    var button = document.getElementById('fiveC');
-   if (button.style.backgroundColor == 'black') {
+   if (button.style.backgroundColor == colorOFF) {
     button.style.backgroundColor = '#00f2ff';
 	}
     else {
-    button.style.backgroundColor = 'black';
+    button.style.backgroundColor = colorOFF;
     }
 }
 
     function click_fiveC(){
             var button = document.getElementById('fiveC');
-            if (button.style.backgroundColor == 'black') {
+            if (button.style.backgroundColor == colorOFF) {
             button.style.backgroundColor = '#00f2ff';
             }
             else {
-                button.style.backgroundColor = 'black';
+                button.style.backgroundColor = colorOFF;
                 }
                 var button = document.getElementById('fiveB');
-                if (button.style.backgroundColor == 'black') {
+                if (button.style.backgroundColor == colorOFF) {
                 button.style.backgroundColor = '#00f2ff';
                     }
                     else {
-                button.style.backgroundColor = 'black';
+                button.style.backgroundColor = colorOFF;
                 }
                 var button = document.getElementById('fiveD');
-                if (button.style.backgroundColor == 'black') {
+                if (button.style.backgroundColor == colorOFF) {
                 button.style.backgroundColor = '#00f2ff';
                     }
                     else {
-                button.style.backgroundColor = 'black';
+                button.style.backgroundColor = colorOFF;
                 }
                     var button = document.getElementById('fourC');
-                        if (button.style.backgroundColor == 'black') {
+                        if (button.style.backgroundColor == colorOFF) {
                         button.style.backgroundColor = '#00f2ff';
             }
                 else {
-                button.style.backgroundColor = 'black';
+                button.style.backgroundColor = colorOFF;
                 }
             }
 
 
 function click_fiveD(){
   var button = document.getElementById('fiveD');
-  if (button.style.backgroundColor == 'black') {
+  if (button.style.backgroundColor == colorOFF) {
     button.style.backgroundColor = '#00f2ff'; 
   } 
   	else {
-    button.style.backgroundColor = 'black'; 
+    button.style.backgroundColor = colorOFF; 
   }
 }
 
     function click_fiveD(){
             var button = document.getElementById('fiveD');
-            if (button.style.backgroundColor == 'black') {
+            if (button.style.backgroundColor == colorOFF) {
             button.style.backgroundColor = '#00f2ff';
             }
             else {
-                button.style.backgroundColor = 'black';
+                button.style.backgroundColor = colorOFF;
                 }
                 var button = document.getElementById('fiveC');
-                if (button.style.backgroundColor == 'black') {
+                if (button.style.backgroundColor == colorOFF) {
                 button.style.backgroundColor = '#00f2ff';
                     }
                     else {
-                button.style.backgroundColor = 'black';
+                button.style.backgroundColor = colorOFF;
                 }
                 var button = document.getElementById('fiveE');
-                if (button.style.backgroundColor == 'black') {
+                if (button.style.backgroundColor == colorOFF) {
                 button.style.backgroundColor = '#00f2ff';
                     }
                     else {
-                button.style.backgroundColor = 'black';
+                button.style.backgroundColor = colorOFF;
                 }
                     var button = document.getElementById('fourD');
-                        if (button.style.backgroundColor == 'black') {
+                        if (button.style.backgroundColor == colorOFF) {
                         button.style.backgroundColor = '#00f2ff';
             }
                 else {
-                button.style.backgroundColor = 'black';
+                button.style.backgroundColor = colorOFF;
                 }
             }
 
 function click_fiveE(){
   var button = document.getElementById('fiveE');
-  if (button.style.backgroundColor == 'black') {
+  if (button.style.backgroundColor == colorOFF) {
     button.style.backgroundColor = '#00f2ff'; 
   } 
   	else {
-    button.style.backgroundColor = 'black'; 
+    button.style.backgroundColor = colorOFF; 
   }
 }
 
       function click_fiveE(){
             var button = document.getElementById('fiveE');
-            if (button.style.backgroundColor == 'black') {
+            if (button.style.backgroundColor == colorOFF) {
             button.style.backgroundColor = '#00f2ff';
             }
             else {
-                button.style.backgroundColor = 'black';
+                button.style.backgroundColor = colorOFF;
                 }
                 var button = document.getElementById('fiveD');
-                if (button.style.backgroundColor == 'black') {
+                if (button.style.backgroundColor == colorOFF) {
                 button.style.backgroundColor = '#00f2ff';
                     }
                     else {
-                button.style.backgroundColor = 'black';
+                button.style.backgroundColor = colorOFF;
                 }
                     var button = document.getElementById('fourE');
-                        if (button.style.backgroundColor == 'black') {
+                        if (button.style.backgroundColor == 'colorOFF') {
                         button.style.backgroundColor = '#00f2ff';
             }
                 else {
-                button.style.backgroundColor = 'black';
+                button.style.backgroundColor = colorOFF;
                 }
             }
 
-
+function board1() {
+colorON = 'purple';
+  click_oneA();
+  click_fiveA();
+  click_oneE();
+  click_fiveE();
+}
 </script>
 </head>
+<div> <input type='button' style="background-color:white;display:inline-block;" onclick='board1()' value='Board 1'></input><input type='button' style="background-color:yellow;display:inline-block;" onclick='board2()' value='Board 2'></input><input type='button' style="background-color:limegreen;display:inline-block;" onclick='board3()' value='Board 3'></input></div>
+<br>
+<div style="background-color:colorOFF;display:inline-block;width:100px;height:100px;" onclick="click_oneA()" id="oneA"></div><div style="background-color:colorOFF;display:inline-block;width:100px;height:100px;" onclick="click_oneB()" id="oneB"></div><div style="background-color:colorOFF;display:inline-block;width:100px;height:100px;" onclick="click_oneC()" id="oneC"></div><div style="background-color:colorOFF;display:inline-block;width:100px;height:100px;" onclick="click_oneD()" id="oneD"></div><div style="background-color:colorOFF;display:inline-block;width:100px;height:100px;" onclick="click_oneE()" id="oneE"></div><br>
 
-<div style="background-color:black;display:inline-block;width:100px;height:100px;" onclick="click_oneA()" id="oneA"></div><div style="background-color:black;display:inline-block;width:100px;height:100px;" onclick="click_oneB()" id="oneB"></div><div style="background-color:black;display:inline-block;width:100px;height:100px;" onclick="click_oneC()" id="oneC"></div><div style="background-color:black;display:inline-block;width:100px;height:100px;" onclick="click_oneD()" id="oneD"></div><div style="background-color:black;display:inline-block;width:100px;height:100px;" onclick="click_oneE()" id="oneE"></div><br>
+<div style="background-color:colorOFF;display:inline-block;width:100px;height:100px;" onclick="click_twoA()" id="twoA"></div><div style="background-color:colorOFF;display:inline-block;width:100px;height:100px;" onclick="click_twoB()" id="twoB"></div><div style="background-color:colorOFF;display:inline-block;width:100px;height:100px;" onclick="click_twoC()" id="twoC"></div><div style="background-color:colorOFF;display:inline-block;width:100px;height:100px;" onclick="click_twoD()" id="twoD"></div><div style="background-color:colorOFF;display:inline-block;width:100px;height:100px;" onclick="click_twoE()" id="twoE"></div><br>
 
-<div style="background-color:black;display:inline-block;width:100px;height:100px;" onclick="click_twoA()" id="twoA"></div><div style="background-color:black;display:inline-block;width:100px;height:100px;" onclick="click_twoB()" id="twoB"></div><div style="background-color:black;display:inline-block;width:100px;height:100px;" onclick="click_twoC()" id="twoC"></div><div style="background-color:black;display:inline-block;width:100px;height:100px;" onclick="click_twoD()" id="twoD"></div><div style="background-color:black;display:inline-block;width:100px;height:100px;" onclick="click_twoE()" id="twoE"></div><br>
+<div style="background-color:colorOFF;display:inline-block;width:100px;height:100px;" onclick="click_threeA()" id="threeA"></div><div style="background-color:colorOFF;display:inline-block;width:100px;height:100px;" onclick="click_threeB()" id="threeB"></div><div style="background-color:colorOFF;display:inline-block;width:100px;height:100px;" onclick="click_threeC()"id="threeC"></div><div style="background-color:colorOFF;display:inline-block;width:100px;height:100px;" onclick="click_threeD()"id="threeD"></div><div style="background-color:colorOFF;display:inline-block;width:100px;height:100px;" onclick="click_threeE()" id="threeE"></div><br>
 
-<div style="background-color:black;display:inline-block;width:100px;height:100px;" onclick="click_threeA()" id="threeA"></div><div style="background-color:black;display:inline-block;width:100px;height:100px;" onclick="click_threeB()" id="threeB"></div><div style="background-color:black;display:inline-block;width:100px;height:100px;" onclick="click_threeC()"id="threeC"></div><div style="background-color:black;display:inline-block;width:100px;height:100px;" onclick="click_threeD()"id="threeD"></div><div style="background-color:black;display:inline-block;width:100px;height:100px;" onclick="click_threeE()" id="threeE"></div><br>
+<div style="background-color:colorOFF;display:inline-block;width:100px;height:100px;" onclick="click_fourA()" id="fourA"></div><div style="background-color:colorOFF;display:inline-block;width:100px;height:100px;" onclick="click_fourB()" id="fourB"></div><div style="background-color:colorOFF;display:inline-block;width:100px;height:100px;" onclick="click_fourC()" id="fourC"></div><div style="background-color:colorOFF;display:inline-block;width:100px;height:100px;" onclick="click_fourD()" id="fourD"></div><div style="background-color:colorOFF;display:inline-block;width:100px;height:100px;" onclick="click_fourE()" id="fourE"></div><br>
 
-<div style="background-color:black;display:inline-block;width:100px;height:100px;" onclick="click_fourA()" id="fourA"></div><div style="background-color:black;display:inline-block;width:100px;height:100px;" onclick="click_fourB()" id="fourB"></div><div style="background-color:black;display:inline-block;width:100px;height:100px;" onclick="click_fourC()" id="fourC"></div><div style="background-color:black;display:inline-block;width:100px;height:100px;" onclick="click_fourD()" id="fourD"></div><div style="background-color:black;display:inline-block;width:100px;height:100px;" onclick="click_fourE()" id="fourE"></div><br>
-
-<div style="background-color:black;display:inline-block;width:100px;height:100px;" onclick="click_fiveA()" id="fiveA"></div><div style="background-color:black;display:inline-block;width:100px;height:100px;" onclick="click_fiveB()" id="fiveB"></div><div style="background-color:black;display:inline-block;width:100px;height:100px;" onclick="click_fiveC()" id="fiveC"></div><div style="background-color:black;display:inline-block;width:100px;height:100px;" onclick="click_fiveD()" id="fiveD"></div><div style="background-color:black;display:inline-block;width:100px;height:100px;" onclick="click_fiveE()" id="fiveE"></div><br>
+<div style="background-color:colorOFF;display:inline-block;width:100px;height:100px;" onclick="click_fiveA()" id="fiveA"></div><div style="background-color:colorOFF;display:inline-block;width:100px;height:100px;" onclick="click_fiveB()" id="fiveB"></div><div style="background-color:colorOFF;display:inline-block;width:100px;height:100px;" onclick="click_fiveC()" id="fiveC"></div><div style="background-color:colorOFF;display:inline-block;width:100px;height:100px;" onclick="click_fiveD()" id="fiveD"></div><div style="background-color:colorOFF;display:inline-block;width:100px;height:100px;" onclick="click_fiveE()" id="fiveE"></div><br>
 </html>

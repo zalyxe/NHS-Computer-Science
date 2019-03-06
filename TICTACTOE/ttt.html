@@ -1,3 +1,4 @@
+
 <html>
 <title>TIC TAC TOE</title>
 <head>
@@ -9,6 +10,35 @@ div {	border-style: solid;
 </style>
 <script>
 
+
+//var win_check()
+
+
+//function win_check(){
+	//var button1A = document.getElementById('oneA');
+    //var button1B = document.getElementById('oneB');
+    //var button1C = document.getElementById('oneC');
+    //if (button1A == button1B == button1C);
+    
+	//if (button.value == "X") {
+    ///document.getElementById('oneB');
+    //document.getElementById('oneC');{
+    //alert("Congradulations, X's have won.");
+    //else {
+    //return false
+    //}
+    //}
+    
+    
+    
+    
+    //oneA ="X" and oneA == oneB and oneB == oneC;
+    alert("Congradulations, X's have won!"); 
+    else
+	
+}
+
+
 turn = 'X';
 function toggle() {
   if (turn == 'X') 
@@ -16,10 +46,13 @@ function toggle() {
   else 
     turn = 'X'; 
 }
+
+
 function click_oneA() {
   mybutton = document.getElementById('oneA');
   mybutton.value = turn;
   toggle(); 
+  win_check(); 
 }
 function click_oneB() {
   mybutton = document.getElementById('oneB');
@@ -70,7 +103,7 @@ function click_threeC() {
 </head>
 <body>
 <h1>Select a gamemode</h1>
-<div style="display:inline-block;"> <input type='button' style="background-color:white;width:150px;" onclick='click_HS' value="Human vs. Human"></input></div><div style="display:inline-block;"><input type='button' style="background-color:#00f2ff;display:inline-block" onclick='click_AI' value="Human vs Computer"></input></div><br><br><br>
+<input type='button' style="background-color:white;width:150px;" onclick='click_HS' value="Human vs. Human"></input><input type='button' style="background-color:#00f2ff;display:inline-block" onclick='click_AI' value="Human vs Computer"></input><br><br><br>
 
 <div style="background-color:white;display:inline-block;width:100px;height:100px;"><input type="button" style="width:100px;height:100px;"onclick="click_oneA()" id="oneA" value=" "></input></div><div style="background-color:white;display:inline-block;width:100px;height:100px;"><input type="button" style="width:100px;height:100px;"onclick="click_oneB()" id="oneB" value=" "></input></div><div style="background-color:white;display:inline-block;width:100px;height:100px;" ><input type="button" style="width:100px;height:100px;"onclick="click_oneC()" id="oneC" value=" "></input></div><br>
 

@@ -1,100 +1,201 @@
-
 <html>
 <title>TIC TAC TOE</title>
 <head>
+
 <style>
+
 div {	border-style: solid;
 		border-color:black;
         border-width:2px;
 }
 </style>
+
 <script>
 
 
 //var win_check()
 
+function win_check(){
+      b1 = document.getElementById('oneA').value; 
+      b2 = document.getElementById('oneB').value; 
+      b3 = document.getElementById('oneC').value; 
+      if (b1=='X' || b1=='O'){
+        if(b1 == b2 && b2 == b3) {
+          winner = true;
+          alert("congradulations, someone has won!");
+          }
+      }
 
-//function win_check(){
-	//var button1A = document.getElementById('oneA');
-    //var button1B = document.getElementById('oneB');
-    //var button1C = document.getElementById('oneC');
-    //if (button1A == button1B == button1C);
-    
-	//if (button.value == "X") {
-    ///document.getElementById('oneB');
-    //document.getElementById('oneC');{
-    //alert("Congradulations, X's have won.");
-    //else {
-    //return false
-    //}
-    //}
-    
-    
-    
-    
-    //oneA ="X" and oneA == oneB and oneB == oneC;
-    alert("Congradulations, X's have won!"); 
-    else
-	
+      b4 = document.getElementById('twoA').value;
+      b5 = document.getElementById('twoB').value;
+      b6 = document.getElementById('twoC').value;
+      if (b4=='X' || b4=='O'){
+        if(b4 == b5 && b5 == b6) {
+        winner = true;
+        alert("congradulations, someone has won!");
+          }  
+      }
+      b7 = document.getElementById('threeA').value;
+      b8 = document.getElementById('threeB').value;
+      b9 = document.getElementById('threeC').value;
+      if (b7=='X' || b7=='O'){
+        if(b7 == b8 && b8 == b9){
+          winner = true;
+          alert("congratulations, someone has won!");
+          }
+      }
+      b1 = document.getElementById('oneA').value;
+      b4 = document.getElementById('twoA').value;
+      b7 = document.getElementById('threeA').value;
+      if (b1=='X' || b1=='O'){
+      	if(b1 == b4 && b4 == b7){
+        	winner = true;
+            alert("Congratulations, someone has won!");
+          }
+      }
+      b2 = document.getElementById('oneB').value;
+      b5 = document.getElementById('twoB').value;
+      b8 = document.getElementById('threeB').value;
+      if (b2=='X' || b2=='O'){
+      	if(b2 == b5 && b5 == b8){
+        	winner = true;
+            alert("Congratulations, someone has won!");
+          }
+      }
+      b3 = document.getElementById('oneC').value;
+      b6 = document.getElementById('twoC').value;
+      b9 = document.getElementById('threeC').value;
+      if (b3=='X' || b3=='O'){
+      	if(b3 == b6 && b6 == b9){
+        	winner = true;
+            alert("Congratulations, someone has won!");
+          }
+      }
+      b1 = document.getElementById('oneA').value;
+      b5 = document.getElementById('twoB').value;
+      b9 = document.getElementById('threeC').value;
+      if(b1 == 'X' || b1 == 'O'){
+      	if(b1 == b5 && b5 == b9){
+        	winner = true;
+        	alert("Congratulations, someone has won!");
+          }
+      }
+      b3 = document.getElementById('oneC').value;
+      b5 = document.getElementById('twoB').value;
+      b7 = document.getElementById('threeA').value;
+      if(b3 == 'X' || b3 == 'O'){
+      	if(b3 == b5 && b5 == b7){
+        	winner = true;
+        	alert("Congratulations, someone has won!");
+          }
+      }
+        
+}
+function click_AI() {
+	computer = document.getElementById('Z.AI').value;
+    	if(computer == false){
+        computer = true;
+        else {
+        computer = false;
+       }
+    }
 }
 
 
 turn = 'X';
+winner = false; 
 function toggle() {
   if (turn == 'X') 
     turn = 'O';
   else 
     turn = 'X'; 
 }
+ 
+
+AIturn = 'O';
+winner = false;
+function toggle() {
+	if (turn == 'O')
+		turn = 'X';
+    else
+	    turn = 'O';
+}
+
 
 
 function click_oneA() {
+	if (!winner) {
   mybutton = document.getElementById('oneA');
   mybutton.value = turn;
   toggle(); 
   win_check(); 
+  }
 }
 function click_oneB() {
+	if (!winner) {
   mybutton = document.getElementById('oneB');
   mybutton.value = turn;
   toggle(); 
+  win_check();
+  }
 }
 function click_oneC() {
+	if (!winner) {
   mybutton = document.getElementById('oneC');
   mybutton.value = turn;
   toggle(); 
+  win_check();
+  }
 }
 
 function click_twoA() {
+	if (!winner) {
   mybutton = document.getElementById('twoA');
   mybutton.value = turn;
   toggle(); 
+  win_check();
+  }
 }
 function click_twoB() {
+	if (!winner) {
   mybutton = document.getElementById('twoB');
   mybutton.value = turn;
   toggle(); 
+  win_check();
+  }
 }
 function click_twoC() {
+	if (!winner) {
   mybutton = document.getElementById('twoC');
   mybutton.value = turn;
   toggle(); 
+  win_check();
+  }
 }
 
 function click_threeA() {
+  if (!winner) {
   mybutton = document.getElementById('threeA');
   mybutton.value = turn;
   toggle(); 
+  win_check();
+  }
 }
 function click_threeB() {
+	if (!winner) {
   mybutton = document.getElementById('threeB');
   mybutton.value = turn;
   toggle(); 
+  win_check();
+  }
 }
 function click_threeC() {
+  if (!winner) {
   mybutton = document.getElementById('threeC');
   mybutton.value = turn;
   toggle(); 
+  win_check();
+  }
 }
 
 </script>
@@ -103,7 +204,7 @@ function click_threeC() {
 </head>
 <body>
 <h1>Select a gamemode</h1>
-<input type='button' style="background-color:white;width:150px;" onclick='click_HS' value="Human vs. Human"></input><input type='button' style="background-color:#00f2ff;display:inline-block" onclick='click_AI' value="Human vs Computer"></input><br><br><br>
+<input type='button' style="background-color:white;width:155px;" onclick='click_HS()' value="Human vs. Human"></input><input type='button' style="background-color:#00f2ff;width:155px;" onclick='click_AI()' id="Z.AI"value="Human vs Computer"></input><br><br><br>
 
 <div style="background-color:white;display:inline-block;width:100px;height:100px;"><input type="button" style="width:100px;height:100px;"onclick="click_oneA()" id="oneA" value=" "></input></div><div style="background-color:white;display:inline-block;width:100px;height:100px;"><input type="button" style="width:100px;height:100px;"onclick="click_oneB()" id="oneB" value=" "></input></div><div style="background-color:white;display:inline-block;width:100px;height:100px;" ><input type="button" style="width:100px;height:100px;"onclick="click_oneC()" id="oneC" value=" "></input></div><br>
 

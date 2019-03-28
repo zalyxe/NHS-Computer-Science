@@ -12,21 +12,32 @@ div {	border-style: solid;
 
 <script>
 
-turn = 'X';
-function toggle(){
-if (turn == 'X')
-	turn = 'O'
-   else
-   turn = 'X';
-  }
-  
-  
+var aqua = '00f2ff';
+aqua = '00f2ff';
+var red = 'ffffff'; 
+red = 'ffffff';
+
+turn = aqua
+function toggle() {
+  if (turn==aqua)
+    turn = red;
+  else
+	turn = aqua;
+}
+
+ 
 function click_one(){
-	if (document.getElementById('sixA'));
-    	document.getElementById('sixA').style.color='#00f2ff'
+	document.getElementById('sixA')
+    if (document.getElementById('sixA').style.backgroundColor='white')
+    	document.getElementById('sixA').style.backgroundColor= aqua;
         else {
-        document.getElementById('sixA').style.color='#ff0000'
+        document.getElementById('sixA').style.backgroundColor='white';
     	    }
+         if (document.getElementById('sixA')=aqua)
+            document.getElementById('fiveA').style.backgroundColor=red;
+            else {
+            document.getElementById('fiveA').style.backgroundColor=aqua
+            }
 		}
 
 

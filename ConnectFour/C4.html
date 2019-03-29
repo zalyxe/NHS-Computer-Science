@@ -17,7 +17,10 @@ aqua = '00f2ff';
 var red = 'ffffff'; 
 red = 'ffffff';
 
-turn = aqua
+var nothing = 'white';
+nothing = 'white';
+
+turn = aqua;
 function toggle() {
   if (turn==aqua)
     turn = red;
@@ -25,7 +28,6 @@ function toggle() {
 	turn = aqua;
 }
 
- 
 function click_one(){
 	document.getElementById('sixA')
     if (document.getElementById('sixA').style.backgroundColor='white')
@@ -39,6 +41,17 @@ function click_one(){
             document.getElementById('fiveA').style.backgroundColor=aqua
             }
 		}
+ 
+//function click_one(){
+//	var box = document.getElementById('sixA');
+  //  if (box.style.backgroundColor==nothing) {
+    //	box.style.backgroundColor = aqua;
+      // }
+		//else {
+        //box.style.backgroundCOlor = red;
+     //	}
+     //}
+ //}
 
 
 </script>
@@ -55,7 +68,7 @@ function click_one(){
 
 <div style="background-color:white;display:inline-block;width:80px;height:80px;" id="fiveA"></div><div style="background-color:white;display:inline-block;width:80px;height:80px;" id="fiveB"></div><div style="background-color:white;display:inline-block;width:80px;height:80px;" id="fiveC"></div><div style="background-color:white;display:inline-block;width:80px;height:80px;" id="fiveD"></div><div style="background-color:white;display:inline-block;width:80px;height:80px;" id="fiveE"></div><div style="background-color:white;display:inline-block;width:80px;height:80px;" id="fiveF"></div><div style="background-color:white;display:inline-block;width:80px;height:80px;" id="fiveG"></div><br>
 
-<div style="background-color:white;display:inline-block;width:80px;height:80px;" id="sixA"></div><div style="background-color:white;display:inline-block;width:80px;height:80px;" id="sixB"></div><div style="background-color:white;display:inline-block;width:80px;height:80px;" id="sixC"></div><div style="background-color:white;display:inline-block;width:80px;height:80px;" id="sixD"></div><div style="background-color:white;display:inline-block;width:80px;height:80px;" id="sixE"></div><div style="background-color:white;display:inline-block;width:80px;height:80px;" onclick="click_sixF" id="sixF"></div><div style="background-color:white;display:inline-block;width:80px;height:80px;" id="sixG"></div><br>
+<div style="background-color:white;display:inline-block;width:80px;height:80px;" id="sixA" value=nothing></div><div style="background-color:white;display:inline-block;width:80px;height:80px;" id="sixB"></div><div style="background-color:white;display:inline-block;width:80px;height:80px;" id="sixC"></div><div style="background-color:white;display:inline-block;width:80px;height:80px;" id="sixD"></div><div style="background-color:white;display:inline-block;width:80px;height:80px;" id="sixE"></div><div style="background-color:white;display:inline-block;width:80px;height:80px;" onclick="click_sixF" id="sixF"></div><div style="background-color:white;display:inline-block;width:80px;height:80px;" id="sixG"></div><br>
 
 
 </body>

@@ -20,43 +20,239 @@ red = 'ffffff';
 var nothing = 'white';
 nothing = 'white';
 
-turn = aqua;
+turn = 'aqua';
+
+
 function toggle() {
-  if (turn==aqua)
-    turn = red;
-  else
-	turn = aqua;
+    if (turn == 'aqua')
+        turn = 'red';
+    else
+        turn = 'aqua';
 }
 
-function click_one(){
-	document.getElementById('sixA')
-    if (document.getElementById('sixA').style.backgroundColor='white')
-    	document.getElementById('sixA').style.backgroundColor= aqua;
-        else {
-        document.getElementById('sixA').style.backgroundColor='white';
-    	    }
-         if (document.getElementById('sixA')=aqua)
-            document.getElementById('fiveA').style.backgroundColor=red;
-            else {
-            document.getElementById('fiveA').style.backgroundColor=aqua
-            }
-		}
- 
-//function click_one(){
-//	var box = document.getElementById('sixA');
-  //  if (box.style.backgroundColor==nothing) {
-    //	box.style.backgroundColor = aqua;
-      // }
-		//else {
-        //box.style.backgroundCOlor = red;
-     //	}
-     //}
- //}
+function click_one() {
+
+	// If bottom row is empty, go there
+    if (document.getElementById('sixA').style.backgroundColor == 'white') {
+    	document.getElementById('sixA').style.backgroundColor = turn;
+        toggle(); 
+    }
+    else if (document.getElementById('fiveA').style.backgroundColor == 'white') {
+    	document.getElementById('fiveA').style.backgroundColor = turn;
+        toggle(); 
+    }
+    else if (document.getElementById('fourA').style.backgroundColor == 'white'){
+    	document.getElementById('fourA').style.backgroundColor = turn;
+        toggle();
+    }
+    else if (document.getElementById('threeA').style.backgroundColor == 'white') {
+    	document.getElementById('threeA').style.backgroundColor = turn;
+        toggle(); 
+    }
+    else if (document.getElementById('twoA').style.backgroundColor == 'white'){
+    	document.getElementById('twoA').style.backgroundColor = turn;
+        toggle();
+    }
+    else if (document.getElementById('oneA').style.backgroundColor == 'white') {
+    	document.getElementById('oneA').style.backgroundColor = turn;
+        toggle(); 
+    }
+    
+}
+
+function click_two() {
+
+	// If bottom row is empty, go there
+    if (document.getElementById('sixB').style.backgroundColor == 'white') {
+    	document.getElementById('sixB').style.backgroundColor = turn;
+        toggle(); 
+    }
+    else if (document.getElementById('fiveB').style.backgroundColor == 'white') {
+    	document.getElementById('fiveB').style.backgroundColor = turn;
+        toggle(); 
+    }
+    else if (document.getElementById('fourB').style.backgroundColor == 'white'){
+    	document.getElementById('fourB').style.backgroundColor = turn;
+        toggle();
+    }
+    else if (document.getElementById('threeB').style.backgroundColor == 'white') {
+    	document.getElementById('threeB').style.backgroundColor = turn;
+        toggle(); 
+    }
+    else if (document.getElementById('twoB').style.backgroundColor == 'white'){
+    	document.getElementById('twoB').style.backgroundColor = turn;
+        toggle();
+    }
+    else if (document.getElementById('oneB').style.backgroundColor == 'white') {
+    	document.getElementById('oneB').style.backgroundColor = turn;
+        toggle(); 
+    }
+    
+}
+
+
+function click_three() {
+
+	// If bottom row is empty, go there
+    if (document.getElementById('sixC').style.backgroundColor == 'white') {
+    	document.getElementById('sixC').style.backgroundColor = turn;
+        toggle(); 
+    }
+    else if (document.getElementById('fiveC').style.backgroundColor == 'white') {
+    	document.getElementById('fiveC').style.backgroundColor = turn;
+        toggle(); 
+    }
+    else if (document.getElementById('fourC').style.backgroundColor == 'white'){
+    	document.getElementById('fourC').style.backgroundColor = turn;
+        toggle();
+    }
+    else if (document.getElementById('threeC').style.backgroundColor == 'white') {
+    	document.getElementById('threeC').style.backgroundColor = turn;
+        toggle(); 
+    }
+    else if (document.getElementById('twoC').style.backgroundColor == 'white'){
+    	document.getElementById('twoC').style.backgroundColor = turn;
+        toggle();
+    }
+    else if (document.getElementById('oneC').style.backgroundColor == 'white') {
+    	document.getElementById('oneC').style.backgroundColor = turn;
+        toggle(); 
+    }
+    
+}
+
+
+function click_four() {
+
+	// If bottom row is empty, go there
+    if (document.getElementById('sixD').style.backgroundColor == 'white') {
+    	document.getElementById('sixD').style.backgroundColor = turn;
+        toggle(); 
+    }
+    else if (document.getElementById('fiveD').style.backgroundColor == 'white') {
+    	document.getElementById('fiveD').style.backgroundColor = turn;
+        toggle(); 
+    }
+    else if (document.getElementById('fourD').style.backgroundColor == 'white'){
+    	document.getElementById('fourD').style.backgroundColor = turn;
+        toggle();
+    }
+    else if (document.getElementById('threeD').style.backgroundColor == 'white') {
+    	document.getElementById('threeD').style.backgroundColor = turn;
+        toggle(); 
+    }
+    else if (document.getElementById('twoD').style.backgroundColor == 'white'){
+    	document.getElementById('twoD').style.backgroundColor = turn;
+        toggle();
+    }
+    else if (document.getElementById('oneD').style.backgroundColor == 'white') {
+    	document.getElementById('oneD').style.backgroundColor = turn;
+        toggle(); 
+    }
+    
+}
+
+
+
+function click_five() {
+
+	// If bottom row is empty, go there
+    if (document.getElementById('sixE').style.backgroundColor == 'white') {
+    	document.getElementById('sixE').style.backgroundColor = turn;
+        toggle(); 
+    }
+    else if (document.getElementById('fiveE').style.backgroundColor == 'white') {
+    	document.getElementById('fiveE').style.backgroundColor = turn;
+        toggle(); 
+    }
+    else if (document.getElementById('fourE').style.backgroundColor == 'white'){
+    	document.getElementById('fourE').style.backgroundColor = turn;
+        toggle();
+    }
+    else if (document.getElementById('threeE').style.backgroundColor == 'white') {
+    	document.getElementById('threeE').style.backgroundColor = turn;
+        toggle(); 
+    }
+    else if (document.getElementById('twoE').style.backgroundColor == 'white'){
+    	document.getElementById('twoE').style.backgroundColor = turn;
+        toggle();
+    }
+    else if (document.getElementById('oneE').style.backgroundColor == 'white') {
+    	document.getElementById('oneE').style.backgroundColor = turn;
+        toggle(); 
+    }
+    
+}
+
+
+
+function click_six() {
+
+	// If bottom row is empty, go there
+    if (document.getElementById('sixF').style.backgroundColor == 'white') {
+    	document.getElementById('sixF').style.backgroundColor = turn;
+        toggle(); 
+    }
+    else if (document.getElementById('fiveF').style.backgroundColor == 'white') {
+    	document.getElementById('fiveF').style.backgroundColor = turn;
+        toggle(); 
+    }
+    else if (document.getElementById('fourF').style.backgroundColor == 'white'){
+    	document.getElementById('fourF').style.backgroundColor = turn;
+        toggle();
+    }
+    else if (document.getElementById('threeF').style.backgroundColor == 'white') {
+    	document.getElementById('threeF').style.backgroundColor = turn;
+        toggle(); 
+    }
+    else if (document.getElementById('twoF').style.backgroundColor == 'white'){
+    	document.getElementById('twoF').style.backgroundColor = turn;
+        toggle();
+    }
+    else if (document.getElementById('oneF').style.backgroundColor == 'white') {
+    	document.getElementById('oneF').style.backgroundColor = turn;
+        toggle(); 
+    }
+    
+}
+
+
+
+function click_seven() {
+
+	// If bottom row is empty, go there
+    if (document.getElementById('sixG').style.backgroundColor == 'white') {
+    	document.getElementById('sixG').style.backgroundColor = turn;
+        toggle(); 
+    }
+    else if (document.getElementById('fiveG').style.backgroundColor == 'white') {
+    	document.getElementById('fiveG').style.backgroundColor = turn;
+        toggle(); 
+    }
+    else if (document.getElementById('fourG').style.backgroundColor == 'white'){
+    	document.getElementById('fourG').style.backgroundColor = turn;
+        toggle();
+    }
+    else if (document.getElementById('threeG').style.backgroundColor == 'white') {
+    	document.getElementById('threeG').style.backgroundColor = turn;
+        toggle(); 
+    }
+    else if (document.getElementById('twoG').style.backgroundColor == 'white'){
+    	document.getElementById('twoG').style.backgroundColor = turn;
+        toggle();
+    }
+    else if (document.getElementById('oneG').style.backgroundColor == 'white') {
+    	document.getElementById('oneG').style.backgroundColor = turn;
+        toggle(); 
+    }
+    
+}
 
 
 </script>
 
 <input type="button" style="background-color:white;width:84px;height:30px;display:inline-block;" onclick="click_one()" value="One"></input><input type="button" style="background-color:white;width:84px;height:30px;" onclick="click_two()" value="Two"></input><input type="button" style="background-color:white;width:84px;height:30px;" onclick="click_three()" value="Three"></input><input type="button" style="background-color:white;width:84px;height:30px;" onclick="click_four()" value="Four"></input><input type="button" style="background-color:white;width:84px;height:30px;" onclick="click_five()" value="Five"></input><input type="button" style="background-color:white;width:84px;height:30px;" onclick="click_six()" value="Six"></input><input type="button" style="background-color:white;width:84px;height:30px;" onclick="click_seven()" value="Seven"></input><br>
+<br></br>
 
 <div style="background-color:white;display:inline-block;width:80px;height:80px;" id="oneA"></div><div style="background-color:white;display:inline-block;width:80px;height:80px;" id="oneB"></div><div style="background-color:white;display:inline-block;width:80px;height:80px;" id="oneC"></div><div style="background-color:white;display:inline-block;width:80px;height:80px;" id="oneD"></div><div style="background-color:white;display:inline-block;width:80px;height:80px;" id="oneE"></div><div style="background-color:white;display:inline-block;width:80px;height:80px;"id="oneF"></div><div style="background-color:white;display:inline-block;width:80px;height:80px;" id="oneG"></div><br>
 
